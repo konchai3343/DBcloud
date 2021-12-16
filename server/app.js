@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const body = require('body-parser');
 //const app = express();
-const mysql = require('mysql');
+var mysql = require('mysql');
 
 var fs = require('fs');
 var http = require('http');
@@ -22,8 +22,8 @@ var httpsServer = https.createServer(credentials, app);
 //app.use(body());
 //app.use(express.static(path.resolve(__dirname, '..', 'build')));
 
-const db = mysql.createConnection({
-    host: '172.26.112.1',
+var db = mysql.createConnection({
+    host: 'Localhost',
     user: 'bom',
     password: '1234',
     database: 'testing'
